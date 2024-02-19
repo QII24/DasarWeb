@@ -1,0 +1,27 @@
+h2{
+color: orange;
+font font-family: Trebuchet MS;
+text-align: center;
+}
+
+
+.kotak {
+    padding: 0%;
+    width: 100px;
+    color: #fff;
+    margin: 10px;
+    background: orange;
+}
+
+#kotak{
+    width: 400px;
+    color: #fff;
+    background: blue;
+    padding: 50px;
+}
+
+body{
+    background: url('bunga2.jpeg'),url(field1.jpeg);
+    background-repeat: no-repeat,repeat ;
+    color: white;
+}
