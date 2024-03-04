@@ -38,3 +38,59 @@ for($i = 1; $i <= $jumlahLahan; $i++) {
 }
 
 echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
+
+echo "<br>";
+echo "<br>";
+
+$skorUjian = [85,92,78,96,88];
+$totalSkor = 0;
+
+foreach ($skorUjian as $skor) {
+    $totalSkor += $skor;
+}
+
+echo "Total skor ujian adalah : $totalSkor ";
+
+echo "<br>";
+echo "<br>";
+
+$nilaiSiswa = [85,92,58,64,90,55,88,79,70,96];
+
+foreach ($nilaiSiswa as $nilai) {
+    echo "Nilai: $nilai (Tidak lulus) <br> ";
+    continue;
+}
+echo "Nilai : $nilai (lulus)<br> ";
+
+echo "<br>";
+echo "<br>";
+
+$nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+sort($nilaiSiswa);
+$totalNilai = 0;
+$count = count($nilaiSiswa);
+for ($i = 2; $i < $count - 2; $i++) {
+    $totalNilai += $nilaiSiswa[$i];
+}
+echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah adalah: $totalNilai";
+
+echo "<br>";
+echo "<br>";
+
+$hargaProduk = 120000;
+$diskon = 0;
+if ($hargaProduk > 100000) {
+    $diskon = 0.2; 
+}
+$totalHarga = $hargaProduk - ($hargaProduk * $diskon);
+echo "Harga yang harus dibayar setelah diskon adalah: Rp " . number_format($totalHarga, 0, ',', '.');
+
+echo "<br>";
+echo "<br>";
+
+$poin = 700; 
+$totalSkor = "Total skor pemain adalah: $poin";
+$hadiahTambahan = ($poin > 500) ? "YA" : "TIDAK";
+echo $totalSkor . PHP_EOL;
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiahTambahan";
+
