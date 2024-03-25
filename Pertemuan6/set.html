@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="Praktik_jQuery/jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#btnl").click(function () {
+                    alert($("#test1").text("<b>Hello World</>"))
+                });
+                $("#btn2").click(function () {
+                    alert($("#test2").html("<b>Hello World</>"))
+                });
+                $("#btn3").click(function () {
+                    alert($("#test3").val("Polinema"))
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="test1">This is first paragraph.</p>
+        <p id="test2">This is <b> another </b>paragraph.</p>
+
+        <p>Your Name: <input type="text" id="test3"></p>
+        <button id="btn1">get text</button>
+        <button id="btn2">get HTML</button>
+        <button id="btn3">get Value</button>
+    </body>
+</html>
