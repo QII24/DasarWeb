@@ -2,7 +2,7 @@
 include('koneksi.php');
 
 $aksi = $_GET['aksi'];
-$nama = $_POST['nama'];
+$nama = $_POST['Nama'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
 $no_telp = $_POST['no_telp'];
@@ -22,7 +22,7 @@ else if ($aksi == 'ubah'){
     if(isset($_POST['id'])){
         $id = $_POST['id'];
 
-        $query = "UPDATE anggota SET nama='$nama', jenis_kelamin='$jenis_kelamin', alamat='$alamat', no_telp='$no_telp' WHERE id = $id";
+        $query = "UPDATE user SET Nama='$nama', jenis_kelamin='$jenis_kelamin', alamat='$alamat', no_telp='$no_telp' WHERE id = $id";
         if (mysqli_query($koneksi, $query)){
             header("Location: index.php");
             exit();
