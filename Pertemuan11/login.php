@@ -3,7 +3,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 include "fungsi/pesan_kilat.php";
-include "config/koneksi.php";
 
 ?>
 <!doctype html>

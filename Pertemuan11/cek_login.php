@@ -5,7 +5,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 include "config/koneksi.php"; 
 include "fungsi/pesan_kilat.php"; 
-include "fungsi/anti_injection.php"; /
+include "fungsi/anti_injection.php"; 
 
 $username = antiinjection($koneksi, $_POST['username']);
 $password = antiinjection($koneksi, $_POST['password']);
